@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <img class="cabecalho_imagem" src="./assets/Frame 6.png" alt="simbolo_alura">
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo">
+            <!--<input type="text" name="input" placeholder="Digite seu texto" class="container__input"> -->
+            <textarea class="container__input" placeholder="Digite seu texto" cols="41" rows="4"></textarea>
+            <img src="./assets/Frame 1.png" alt="recado_usuario">
+            <div class="apresentacao__links"> 
+                <button onclick="btnCriptar()" class="container__botao">Criptografar</button>
+                <button onclick="btnDesencript()" id="reiniciar" class="container__botao">Descriptografar</button>
+            </div>
+        </section>
+        <!--<input type="text" name="receba" placeholder="Digite um texto que voce deseja criptografar ou descriptografar" class="container__input">-->
+        <section>
+            <textarea class="container__text" placeholder="Digite um texto que você deseja criptografar ou descriptografar" cols="20" rows="10"></textarea>
+            <button id="tetto" class="container__botao" onclick="copia()" disabled>Copiar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Lucas.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html> 
